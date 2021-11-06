@@ -36,4 +36,4 @@ if [ "$1" == "explore" ] ; then
   exit 0
 fi
 
-wine D:\\autorun\\autorun.exe && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh
+wine D:\\program\\dw_32.exe && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh
