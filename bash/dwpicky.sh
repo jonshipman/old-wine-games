@@ -36,7 +36,4 @@ if [ "$1" == "explore" ] ; then
   exit 0
 fi
 
-# exit 0
-# xrandr --output LVDS1 --mode 640x480
-
 wine D:\\autorun\\autorun.exe && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh

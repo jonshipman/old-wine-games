@@ -5,13 +5,23 @@ export WINEARCH=win32
 export MESA_GL_VERSION_OVERRIDE=4.5
 export MANGOHUD=1
 
-mkdir -p "$WINEPREFIX"
-echo "using $WINEPREFIX"
+if [ ! -d "$WINEPREFIX" ] ; then
+  mkdir -p "$WINEPREFIX"
+  echo "using $WINEPREFIX"
 
-sudo chown -R "$USER" "$WINEPREFIX"
+  wine wineboot
+  # set Windows version and mount cd
+  winecfg
+  winetricks -q corefonts
+
+  # to install
+  wine explorer.exe
+else
+  sudo chown -R "$USER" "$WINEPREFIX"
+fi
 
 if [ "$1" == "tricks" ] ; then
-  winetricks
+  winetricks ${@: 2}
   exit 0
 fi
 
