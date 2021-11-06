@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WINEPREFIX=/Games/prefix/elmosworld 
+export WINEPREFIX=/Games/prefix/elmosworld
 export WINEARCH=win32
 export MESA_GL_VERSION_OVERRIDE=4.5
 export MANGOHUD=1
@@ -25,4 +25,3 @@ if [ "$1" == "explore" ] ; then
 fi
 
 wine "$WINEPREFIX/drive_c/Program Files/Sesame Street/Sesame Street - Elmo's World/Elmo's World.exe" && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh
-

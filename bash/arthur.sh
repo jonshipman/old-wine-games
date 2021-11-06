@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WINEPREFIX=/Games/prefix/arthur 
+export WINEPREFIX=/Games/prefix/arthur
 export WINEARCH=win32
 export MESA_GL_VERSION_OVERRIDE=4.5
 export MANGOHUD=1
@@ -26,5 +26,4 @@ if [ "$1" == "explore" ] ; then
 fi
 
 xrandr --output LVDS1 --mode 640x480
-wine "/Games/Disks/ARTHUR/aca32.exe" && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh 
-
+wine "/Games/Disks/ARTHUR/aca32.exe" && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh

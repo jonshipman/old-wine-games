@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WINEPREFIX=/Games/prefix/elmosaw 
+export WINEPREFIX=/Games/prefix/elmosaw
 export WINEARCH=win32
 export MESA_GL_VERSION_OVERRIDE=4.5
 export MANGOHUD=1
@@ -38,4 +38,3 @@ fi
 xrandr --output LVDS1 --mode 640x480
 
 wine C:\\windows\\system32\\cmd.exe /c "$WINEPREFIX/drive_c/startup.bat" && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh
-

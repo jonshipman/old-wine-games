@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WINEPREFIX=/Games/prefix/arthurtg 
+export WINEPREFIX=/Games/prefix/arthurtg
 export WINEARCH=win32
 export MESA_GL_VERSION_OVERRIDE=4.5
 export MANGOHUD=1
@@ -25,11 +25,4 @@ if [ "$1" == "explore" ] ; then
   exit 0
 fi
 
-# Wine init
-# wine wineboot
-
-# Install Fonts
-# winetricks -q corefonts
-
 wine "$WINEPREFIX/drive_c/Program Files/The Learning Company/Arthur's Thinking Games/Park.exe" && /Games/bash/reset_res.sh || /Games/bash/reset_res.sh
-
