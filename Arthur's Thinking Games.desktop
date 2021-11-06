@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/Games/bash/arthurtg.sh
+Name=Arthur's Thinking Games
+Icon=/Games/prefix/arthurtg/drive_c/Program Files/The Learning Company/Arthur's Thinking Games/ARTHURTG.ICO
+
